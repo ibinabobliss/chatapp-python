@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Chat App</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+        color: #fff;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 80%;
+        background-color: #333;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+
+      .left-content,
+      .right-content {
+        padding: 40px;
+        text-align: center;
+      }
+
+      .left-content {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .right-content {
+        background-color: #555;
+      }
+
+      .message-container {
+        margin-bottom: 20px;
+      }
+
+      .message {
+        font-size: 2em;
+        color: #f5f5f5;
+        font-weight: bold;
+        margin-top: 7px;
+      }
+
+      .button-container {
+        margin-top: 20px;
+      }
+
+      .navigate-button {
+        background-color: #777;
+        padding: 15px 30px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        margin-top: 10px;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+      }
+
+      .navigate-button:hover {
+        background-color: #fafafa;
+        color: #212121;
+      }
+
+      .welcome-image {
+        width: 100%;
+        border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        .right-content {
+          display: none;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .left-content,
+        .right-content {
+          flex: 1;
+          margin-right: 5px;
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-content">
+        <div class="message-container">
+          <div class="message">Welcome to Chat App!</div>
+          <div class="message">Start chatting with your friends.</div>
+        </div>
+
+        <div class="button-container">
+          <a href="{% url 'home' %}" class="navigate-button">Start Chat</a>
+        </div>
+      </div>
+      <div class="right-content">
+        <img
+          src="https://picsum.photos/800/600?random=2"
+          alt="Dummy Image"
+          class="welcome-image" />
+      </div>
+    </div>
+  </body>
+</html>
