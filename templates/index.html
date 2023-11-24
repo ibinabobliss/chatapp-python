@@ -81,13 +81,19 @@
         <h1>Enter Room</h1>
         <form action="" method="POST">
           {% csrf_token %}
-          <label for="">Username</label><br />
+          <label
+            style="color: #212121; font-weight: 400px; margin-bottom: 10px"
+            for=""
+            >Username</label
+          ><br />
           <input
             type="text"
             placeholder="Username"
             name="username"
             required /><br />
-          <label for="">Room name</label><br />
+          <label style="color: #212121; font-weight: 400px" for=""
+            >Room name</label
+          ><br />
           <input
             type="text"
             placeholder="Room name"

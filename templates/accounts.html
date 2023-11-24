@@ -1,0 +1,118 @@
+<!-- accounts.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounts</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      .profile-container {
+        background-color: #ffffff;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+
+      .center-text {
+        text-align: center;
+        padding: 20px;
+        border-color: grey;
+        border-width: 2px;
+      }
+
+      h2 {
+        color: #2196f3;
+      }
+
+      p {
+        color: #757575;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .additional-text {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .additional-butttin {
+        color: #1b5e20;
+        font-weight: bold;
+      }
+
+      .button {
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        border-width: 0;
+        padding-bottom: 10px;
+      }
+      .botton {
+        cursor: pointer;
+        background-color: #212121;
+        margin-left: 20px;
+        padding: 10px;
+        color: #fafafa;
+        border-width: 0px;
+        border-radius: 3px;
+      }
+
+      .botton:hover {
+        background-color: grey;
+        padding: 5px;
+        color: #212121;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="center-text">
+        <h2>Accounts</h2>
+        <p>Explore your profile information and settings.</p>
+      </div>
+      <div class="additional-text">
+        <p class="additional-butttin">Username :</p>
+        <p>{{ username }}</p>
+      </div>
+      <div class="additional-text">
+        <p class="additional-butttin">Room Name :</p>
+        <p>{{ room_name }}</p>
+      </div>
+
+      <!-- Other content goes here -->
+
+      <div class="button">
+        <button class="botton" onclick="goBack()">Close Room</button>
+      </div>
+    </div>
+
+    <script>
+      function goToSettings() {
+        // Replace 'your-settings-page.html' with the actual URL of your settings page
+        window.location.href = "";
+      }
+
+      function goBack() {
+        // Go back to the previous page
+        window.location.href = "home";
+      }
+    </script>
+  </body>
+</html>

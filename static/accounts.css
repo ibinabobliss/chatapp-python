@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.parent {
+    background-color: #eceff1;
+    height: 80vh;
+    width: 80%;
+    border-radius: 10px;
+    border-color: grey;
+    border-width: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.title {
+    color: #424242;
+}
+
+.subtitle {
+    color: #8d6e63;
+}
+
+.name-space,
+.room-name-space {
+    color: #424242;
+}

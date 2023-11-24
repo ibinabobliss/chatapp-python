@@ -15,7 +15,7 @@
         justify-content: space-around;
         align-items: center;
         background-color: #555;
-        padding: 10px;
+        padding: 60px;
     }
 
     nav ul li {
@@ -40,7 +40,7 @@
         display: flex;
         justify-content: center;
         /* background-image: url("/static/img/bck.jpg");  */
-       
+       padding-top: 40px;
         background-position: center; 
         background-repeat: no-repeat; 
         background-size: cover; 
@@ -127,16 +127,17 @@
     }
 
     .chat-body .message .send {
-        background-color: #DAAD86;
+        background-color: #636581;
         max-width: 400px;
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 10px;
+        color:#fff;
     }
     .chat-body .message .receive{
-        background-color: #212121;
+        background-color: #fafafa;
         max-width: 400px;
-        color:whitesmoke;
+        color:#bdbdbd;
         margin-right: 60px;
         border-radius: 10px;
         margin-bottom: 10px;
@@ -175,11 +176,14 @@
 
     form button {
         width: 25%;
-        padding: 10px;
-        background-color: #DAAD86;
         border-radius: 5px;
         border: none;
         color: #fff;
+        background-color: #333;
+        padding: 10px ;
+        font-size: 1em;
+        cursor: pointer;
+        font-weight: bold;
     }
 
 
